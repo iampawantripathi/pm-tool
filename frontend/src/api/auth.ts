@@ -6,6 +6,7 @@ export const authAPI = {
         const response = await client.post('/auth/login', credentials);
         return response.data;
     },
+    
 
     register: async (credentials: RegisterCredentials): Promise<AuthResponse> => {
         const response = await client.post('/auth/register', credentials);
